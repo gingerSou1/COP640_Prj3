@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!--- calls css file and sets title--->
+	<link rel="stylesheet" href="static/lab_format.css">
+    <title>LOGIN</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function () { null };
+    </script>
+</head>
+<!--- body of page including h, p, styles, and links --->
+<body style="background-color: white">
+<!--- info on code: https://developers.google.com/custom-search/docs/element
+ 	and google programmable search engine--->
+<script async src="https://cse.google.com/cse.js?cx=9790d456520810e89"></script>
+<div class="gcse-search"></div>
+<!---------------------------------------------------------------------------->
+	<div style="text-align:center">
+		<h1>Welcome {{user}}, your last login was {{ last_login }}!!! </h1>
+		<h2>Please make a selection:</h2>
+		<a href="/landing.html" style="text-align:left display:inline-block">Home</a><br><br>
+		<a href="environmental.html" style="text-align:right display:inline-block">Environmental Controls</a><br><br><br>
+		<a href="/" style="text-align:right display:inline-block"> LOGOUT </a>
+	</div>
+</body>
+</html>

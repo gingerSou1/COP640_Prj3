@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--- calls css file and sets title--->
+    <title>Add Data</title>
+    <link rel="stylesheet" href="/static/lab_format.css">
+</head>
+<body>
+    <div style="text-align:center">
+      <h1>Please Add Data items</h1><br>
+    <form method="POST">
+        <label for="time">Time:</label>
+        <input type="text" name="time"><br>
+        <label for="temp">Temperature:</label>
+        <input type="text" name="temp"><br>
+        <label for="tolerance">Tolerance:</label>
+        <input type="text" name="tolerance"><br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+        {% extends "layout.html" %}
+</body>
+</html>
