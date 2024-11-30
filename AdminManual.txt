@@ -1,0 +1,13 @@
+Glover-Proj3.py Administrator manual
+
+The project hosted locally at http://localhost:8080/ is a Python based webpage that allows authenticated users to login to the webpage and monitor and view the environmental control system.
+This is accomplished by navigating to the webpage and providing your username and password for the system.
+Once the admin is authenticated, a landing page is displayed on a black background welcoming you and annoncing that this session is logged with the time and date.
+As a general user you are presented with three buttons of:
+1. Home
+2. Environmental Controls
+3. Logout
+
+Home returns you to this landing page.
+Environtmental controls takes you to a page that displays all available readings for the last 24 hours for time, temperature, and tolerance. The administrator has extra rights to add, delete, or manipulate the data in this table.
+Logout will log user out of this session and returns them to the login page.
