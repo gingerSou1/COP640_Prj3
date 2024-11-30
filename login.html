@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--- calls css file and sets title--->
+    <title>User Login</title>
+    <link rel="stylesheet" href="/static/format.css">
+</head>
+<body>
+    <div style="text-align:center">
+      <h1>Please login</h1><br>
+    <form method="POST">
+        <label for="user">Username:</label>
+        <input type="text" name="user"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password"><br>
+        <button type="submit">Submit</button>
+    </form>
+        {% if error is defined and error != None %}
+            <span style="color:red;font-size:10pt;">Error: {{ error }}</span>
+        {% endif %}
+    </div>
+        {% extends "layout.html" %}
+</body>
+</html>

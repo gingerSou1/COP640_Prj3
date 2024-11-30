@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table, th, td {border: 1px solid white}
+    th, td {padding: 5px;}
+  </style>
+		<!--- calls css file and sets title--->
+	<link rel="stylesheet" href="static/format.css">
+    <title>Environmental Results</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function () { null };
+    </script>
+</head>
+<!--- body of page including h, p, styles, and links --->
+<body style="background-color: black">
+		<a href="/admin_landing.html" style="text-align:left display:inline-block">Home</a>
+         <a href="/" style="text-align:right display:inline-block"> LOGOUT </a>
+<!--- info on code: https://developers.google.com/custom-search/docs/element
+ 	and google programmable search engine--->
+<script async src="https://cse.google.com/cse.js?cx=9790d456520810e89"></script>
+<div class="gcse-search"></div>
+<!---------------------------------------------------------------------------->
+        <div style="text-align:center">
+		<p> The date and time is: {{ datetime }} </p><br>
+            	<a href="/add_data">Edit Data</a>
+		<h1 style="color:white">Environmental Results </h1>
+        <table class="center" style="color:white">
+            <thead>
+                <tr>
+                    {% for header in headers %}
+                        <th>{{ header }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                        {% for value in row.values() %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+	</div>
+</body>
+</html>

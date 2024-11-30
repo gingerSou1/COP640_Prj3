@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!--- calls css file and sets title--->
+	<link rel="stylesheet" href="static/format.css">
+    <title>LOGIN</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function () { null };
+    </script>
+</head>
+<!--- body of page including h, p, styles, and links --->
+<body style="background-color: black">
+		<a href="/admin_landing.html" style="text-align:left display:inline-block">Home</a>
+         <a href="/ICS_Admin">ICS Application</a>
+         <a href="/" style="text-align:right display:inline-block"> LOGOUT </a>
+<!--- info on code: https://developers.google.com/custom-search/docs/element
+ 	and google programmable search engine--->
+<script async src="https://cse.google.com/cse.js?cx=9790d456520810e89"></script>
+<div class="gcse-search"></div>
+<!---------------------------------------------------------------------------->
+	<div style="text-align:center">
+		<h1 style="color:white">Welcome {{user}}, your last login was {{ last_login }}!!! </h1>
+		<h2> This session is logged and monitored for security and integrity!</h2>		
+		<h2>Please make a selection from name menu above!</h2>
+        <h2> -Home will return you to this landing page.</h2>
+        <h2> -Cloud takes you to the cloud landing page.</h2>
+        <h2> -ICS takes you to the ICS display page unless logged in as admin.</h2>
+        <h2> -About takes you to the ABOUT section.</h2>
+        <h2> -Logout will close this session and return to the login page.</h2>
+	</div>
+</body>
+</html>

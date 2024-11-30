@@ -1,0 +1,52 @@
+/**
+* CSS file for format of html functions
+* @author Corey Glover
+* @version 0.1
+*/
+
+h1 {
+    font-family: cursive;
+    font-size: 40pt;
+    font-style: bold;
+    }
+     
+h2 {
+    color:blue;
+    font-size: 20pt;
+    font-style: italic;
+    }
+     
+h3 {
+    color:white;
+    font-size: 16pt;
+    }
+
+p {
+    color:magenta
+    }
+
+ol {
+    color:blue;
+    text-align=center;
+    list-style-position: inside;
+    }
+
+ul {
+    color:blue;
+    text-align=center;
+    list-style-position: inside;
+    }
+
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10%;
+    }
+
+container {
+    padding: 16px;
+    }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;

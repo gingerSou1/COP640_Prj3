@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!--- calls css file and sets title--->
+	<link rel="stylesheet" href="static/format.css">
+    <title>Cloud Page</title>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+
+        setTimeout("preventBack()", 0);
+
+        window.onunload = function () { null };
+    </script>
+</head>
+<!--- body of page including h, p, styles, and links --->
+<body style="background-color: white">
+{% include 'navbar.html' %}
+<!--- info on code: https://developers.google.com/custom-search/docs/element
+ 	and google programmable search engine--->
+<script async src="https://cse.google.com/cse.js?cx=9790d456520810e89"></script>
+<div class="gcse-search"></div>
+<!---------------------------------------------------------------------------->
+
+
+	<div style="text-align:center">
+		<h1>Welcome to the Cloud!!! </h1>
+		<h2>This page exists in the cloud!</h2>
+	</div>
+</body>
+</html>
